@@ -1,23 +1,33 @@
-import React from 'react';
+// Module imports to load in dependencies
+// Uses both default & named imports
+import React, {Component, PropTypes} from 'react';
 import Remarkable from 'remarkable';
 
-var Comment = React.createClass({
-  rawMarkup: function() {
-    var md = new Remarkable();
-    var rawMarkup = md.render(this.props.children.toString());
-    return { __html: rawMarkup };
-  },
+// Class definition (formerly React.createClass)
+// Module export as default
+export default class Comment extends Component {
+    static propTypes = {
+        children: PropTypes.node.isRequired,
+        author: PropTypes.string.isRequired
+    }
 
-  render: function() {
-    return (
-      <div className="comment">
-        <h2 className="commentAuthor">
-          {this.props.author}
-        </h2>
-        <span dangerouslySetInnerHTML={this.rawMarkup()} />
-      </div>
-    );
-  }
-});
+    _getRawMarkup() {
+        let md = new Remarkable();
+        let rawMarkup = md.render(this.props.children.toString());
 
-export default Comment;
+        return {__html: rawMarkup};
+    }
+
+    render() {
+        let {author} = this.props;
+
+        return (
+            <div className="comment">
+                <h2 className="commentAuthor">
+                    {author}
+                </h2>
+                <span dangerouslySetInnerHTML={this._getRawMarkup()} />
+            </div>
+        );
+    }
+}
