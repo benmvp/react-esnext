@@ -29,17 +29,16 @@ export default class CommentForm extends Component {
     }
 
     _handleSubmit(e) {
-        e.preventDefault();
+        let author = this.state.author;
+        let text = this.state.text;
 
-        let author = this.state.author.trim();
-        let text = this.state.text.trim();
+        e.preventDefault();
 
         if (!text || !author) {
             return;
         }
 
         this.props.onCommentSubmit({author, text});
-
         this.setState(INITIAL_STATE);
     }
 

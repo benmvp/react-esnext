@@ -1,10 +1,4 @@
-# React + ES.next = ♥
-
-A step-by-step example of how to leverage ES6+/ES2015+ in React by rewriting (an adapted version of) the [official React tutorial](https://facebook.github.io/react/docs/tutorial.html).
-
-_NOTE:_ In progress!
-
-## To run completed app
+# Completed App
 
 Assuming you have a version of [node](https://nodejs.org/en/) installed, [install `nvm`](https://github.com/creationix/nvm#install-script) and then close & reopen your terminal.
 
@@ -20,7 +14,7 @@ nvm install node
 git clone https://github.com/YOUR-USERNAME/react-esnext.git
 ```
 
-Change to [`final`](final/) directory:
+Change to [`final`](./) directory:
 
 ```sh
 cd react-esnext/final
@@ -46,9 +40,3 @@ npm run start
 ```
 
 Once the initial bundle is built, visit [http://localhost:8080/](http://localhost:8080/).
-
-## Exercises
-
-Each step in the workshop builds on top of the previous one. You can begin at the [Start](00-start/). Afterwards follow these steps:
-
-_Coming soon!_

@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "serve src --port 8080",
+    "start:api": "node api-server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.0",
+    "eslint": "^2.13.1",
+    "eslint-config-benmvp": "^4.1.0",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.2",
+    "serve": "^1.4.0"
+  }
+}
