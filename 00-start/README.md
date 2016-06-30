@@ -49,7 +49,7 @@ npm run start
 
 ## Next
 
-Coming soon...
+Go to [Step 1 - Modules](../01-modules/).
 
 ## Resources
 

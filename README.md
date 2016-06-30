@@ -51,4 +51,4 @@ Once the initial bundle is built, visit [http://localhost:8080/](http://localhos
 
 Each step in the workshop builds on top of the previous one. You can begin at the [Start](00-start/). Afterwards follow these steps:
 
-_Coming soon!_
+0. [Modules](01-modules/)
