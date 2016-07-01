@@ -4,13 +4,11 @@ import React, {Component, PropTypes} from 'react';
 
 // Now that we no longer are using `getInitialState`, we need
 // to store the initial state so we can reset it as needed
-const INITIAL_STATE = {
+var INITIAL_STATE = {
     author: '',
     text: ''
 };
 
-// Class definition (formerly React.createClass)
-// Module export as default
 export default class CommentForm extends Component {
     static propTypes = {
         onCommentSubmit: PropTypes.func.isRequired
@@ -19,20 +17,21 @@ export default class CommentForm extends Component {
     state = INITIAL_STATE
 
     _updateFormFieldState(name, e) {
-        this.setState({[name]: e.target.value});
-    }
+        var newState = {};
 
+        newState[name] = e.target.value;
+
+        this.setState(newState);
+    }
     _handleAuthorChange(e) {
         this._updateFormFieldState('author', e);
     }
-
     _handleTextChange(e) {
         this._updateFormFieldState('text', e);
     }
-
     _handleSubmit(e) {
-        let author = this.state.author;
-        let text = this.state.text;
+        var author = this.state.author;
+        var text = this.state.text;
 
         e.preventDefault();
 
@@ -40,12 +39,13 @@ export default class CommentForm extends Component {
             return;
         }
 
-        this.props.onCommentSubmit({author, text});
+        this.props.onCommentSubmit({author: author, text: text});
         this.setState(INITIAL_STATE);
     }
 
     render() {
-        let {author, text} = this.state;
+        var author = this.state.author;
+        var text = this.state.text;
 
         return (
             <form className="commentForm" onSubmit={this._handleSubmit.bind(this)}>

@@ -104,7 +104,7 @@ Finally, visit [http://localhost:8080/](http://localhost:8080/) to see the app r
 
 ## Next
 
-Coming soon...
+Go to [Step 2 - Classes](../02-classes/).
 
 ## Resources
 
