@@ -2,8 +2,6 @@
 
 A step-by-step example of how to leverage ES6+/ES2015+ in React by rewriting (an adapted version of) the [official React tutorial](https://facebook.github.io/react/docs/tutorial.html).
 
-_NOTE:_ In progress!
-
 ## To run completed app
 
 Assuming you have a version of [node](https://nodejs.org/en/) installed, [install `nvm`](https://github.com/creationix/nvm#install-script) and then close & reopen your terminal.
@@ -58,3 +56,4 @@ Each step in the workshop builds on top of the previous one. You can begin at th
 0. [Arrow functions](05-arrow-functions/)
 0. [Enhanced object literals](06-enhanced-object-literals/)
 0. [Spread operator](07-spread-operator/)
+0. [Promises](08-promises/)

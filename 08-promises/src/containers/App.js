@@ -1,14 +1,10 @@
 // Module imports to load in dependencies
-// Uses default, named & unnamed imports
-import React, {Component, PropTypes} from 'react';
+// Uses both default & named imports
+import React, {PropTypes, Component} from 'react';
 import CommentList from '../components/CommentList';
 import CommentForm from '../components/CommentForm';
-import 'whatwg-fetch';
 
-// Class definition (formerly React.createClass)
-// Module export as default
 export default class App extends Component {
-    // Static propTypes definition (formerly )
     static propTypes = {
         url: PropTypes.string.isRequired,
         pollInterval: PropTypes.number
@@ -23,10 +19,7 @@ export default class App extends Component {
     componentDidMount() {
         this._loadCommentsFromServer();
 
-        this._pollId = setInterval(
-            this._loadCommentsFromServer.bind(this),
-            this.props.pollInterval
-        );
+        this._pollId = setInterval(this._loadCommentsFromServer.bind(this), this.props.pollInterval);
     }
     componentWillUnmount() {
         clearInterval(this._pollId);

@@ -10,7 +10,7 @@ Replace array concatenation or object merges with the spread operator.
 
 ## Next
 
-Coming soon...
+Go to [Step 8 - Promises](../08-promises/).
 
 ## Resources
 
