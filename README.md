@@ -53,3 +53,4 @@ Each step in the workshop builds on top of the previous one. You can begin at th
 
 0. [Modules](01-modules/)
 0. [Classes](02-classes/)
+0. [Block scoping](03-block-scoping/)

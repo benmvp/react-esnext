@@ -11,7 +11,7 @@ None
 
 ## Next
 
-Coming soon...
+Go to [Step 3 - Block scoping](../03-block-scoping/).
 
 ## Resources
 
