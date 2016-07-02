@@ -6,7 +6,7 @@ None
 
 ## Tasks
 
-- Replace variable assignments from dereferences of objects (such as `props` or `state`) with destructuring assignments
+Replace variable assignments from dereferences of objects (such as `props` or `state`) with destructuring assignments
 
 ## Next
 

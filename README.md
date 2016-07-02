@@ -56,3 +56,4 @@ Each step in the workshop builds on top of the previous one. You can begin at th
 0. [Block scoping](03-block-scoping/)
 0. [Destructuring](04-destructuring/)
 0. [Arrow functions](05-arrow-functions/)
+0. [Enhanced object literals](06-enhanced-object-literals/)

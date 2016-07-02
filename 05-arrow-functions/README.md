@@ -6,11 +6,11 @@ None
 
 ## Tasks
 
-- Replace function expressions with arrow functions
+Replace function expressions with arrow functions
 
 ## Next
 
-Coming soon...
+Go to [Step 6 - Enhanced object literals](../06-enhanced-object-literals/).
 
 ## Resources
 

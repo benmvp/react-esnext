@@ -30,12 +30,8 @@ export default class App extends Component {
             url: this.props.url,
             dataType: 'json',
             cache: false,
-            success: function(comments) {
-                this.setState({comments: comments});
-            }.bind(this),
-            error: function(xhr, status, err) {
-                console.error(this.props.url, status, err.toString());
-            }.bind(this)
+            success: (comments) => this.setState({comments}),
+            error: (xhr, status, err) => console.error(this.props.url, status, err.toString())
         });
     }
     _handleCommentSubmit(comment) {
@@ -56,13 +52,11 @@ export default class App extends Component {
             dataType: 'json',
             type: 'POST',
             data: comment,
-            success: function(resComments) {
-                this.setState({comments: resComments});
-            }.bind(this),
-            error: function(xhr, status, err) {
-                this.setState({comments: comments});
+            success: (resComments) => this.setState({comments: resComments}),
+            error: (xhr, status, err) => {
+                this.setState({comments});
                 console.error(this.props.url, status, err.toString());
-            }.bind(this)
+            }
         });
     }
 
