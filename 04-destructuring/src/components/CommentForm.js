@@ -9,8 +9,6 @@ const INITIAL_STATE = {
     text: ''
 };
 
-// Class definition (formerly React.createClass)
-// Module export as default
 export default class CommentForm extends Component {
     static propTypes = {
         onCommentSubmit: PropTypes.func.isRequired
@@ -19,17 +17,18 @@ export default class CommentForm extends Component {
     state = INITIAL_STATE
 
     _updateFormFieldState(name, e) {
-        this.setState({[name]: e.target.value});
-    }
+        let newState = {};
 
+        newState[name] = e.target.value;
+
+        this.setState(newState);
+    }
     _handleAuthorChange(e) {
         this._updateFormFieldState('author', e);
     }
-
     _handleTextChange(e) {
         this._updateFormFieldState('text', e);
     }
-
     _handleSubmit(e) {
         let {author, text} = this.state;
 
@@ -39,7 +38,7 @@ export default class CommentForm extends Component {
             return;
         }
 
-        this.props.onCommentSubmit({author, text});
+        this.props.onCommentSubmit({author: author, text: text});
         this.setState(INITIAL_STATE);
     }
 

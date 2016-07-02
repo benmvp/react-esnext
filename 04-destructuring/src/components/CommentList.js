@@ -3,8 +3,6 @@
 import React, {Component, PropTypes} from 'react';
 import Comment from './Comment';
 
-// Class definition (formerly React.createClass)
-// Module export as default
 export default class CommentList extends Component {
     static propTypes = {
         comments: PropTypes.arrayOf(
@@ -17,11 +15,13 @@ export default class CommentList extends Component {
     }
 
     render() {
-        let commentNodes = this.props.comments.map(({author, id, text}) => (
-            <Comment author={author} key={id}>
-                {text}
-            </Comment>
-        ));
+        let commentNodes = this.props.comments.map(function({author, id, text}) {
+            return (
+                <Comment author={author} key={id}>
+                    {text}
+                </Comment>
+            );
+        });
 
         return (
             <div className="commentList">

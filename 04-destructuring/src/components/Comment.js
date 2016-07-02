@@ -3,8 +3,6 @@
 import React, {Component, PropTypes} from 'react';
 import Remarkable from 'remarkable';
 
-// Class definition (formerly React.createClass)
-// Module export as default
 export default class Comment extends Component {
     static propTypes = {
         children: PropTypes.node.isRequired,
@@ -17,7 +15,6 @@ export default class Comment extends Component {
 
         return {__html: rawMarkup};
     }
-
     render() {
         let {author} = this.props;
 

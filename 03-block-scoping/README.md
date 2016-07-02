@@ -11,7 +11,7 @@ None
 
 ## Next
 
-Coming soon...
+Go to [Step 4 - Destructuring](../04-destructuring/).
 
 ## Resources
 
