@@ -10,7 +10,7 @@ None
 
 ## Next
 
-Coming soon...
+Go to [Step 5 - Arrow functions](../05-arrow-functions/).
 
 ## Resources
 
