@@ -10,7 +10,7 @@ Replace object literals with property value shorthand and computed property keys
 
 ## Next
 
-Coming soon...
+Go to [Step 7 - Spread operator](../07-spread-operator/).
 
 ## Resources
 

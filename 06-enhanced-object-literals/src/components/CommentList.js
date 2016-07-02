@@ -15,6 +15,10 @@ export default class CommentList extends Component {
     }
 
     render() {
+        // Using an arrow function with object destructuring!
+        // The arrow function provides concise syntax for the function callback.
+        // The object destructuring in the header provides a quick & concise way
+        // to get the needed properties from the object parameter.
         let commentNodes = this.props.comments.map(({author, id, text}) => {
             return (
                 <Comment author={author} key={id}>

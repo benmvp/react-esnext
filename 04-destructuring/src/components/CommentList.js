@@ -15,6 +15,8 @@ export default class CommentList extends Component {
     }
 
     render() {
+        // The object destructuring in the header provides a quick & concise way
+        // to get the needed properties from the object parameter.
         let commentNodes = this.props.comments.map(function({author, id, text}) {
             return (
                 <Comment author={author} key={id}>

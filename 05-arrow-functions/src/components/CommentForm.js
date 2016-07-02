@@ -30,6 +30,8 @@ export default class CommentForm extends Component {
         this._updateFormFieldState('text', e);
     }
     _handleSubmit(e) {
+        // Object destructuring allows us to assign both `author` & `text`
+        // variables in a single statement
         let {author, text} = this.state;
 
         e.preventDefault();
@@ -43,6 +45,8 @@ export default class CommentForm extends Component {
     }
 
     render() {
+        // Object destructuring allows us to assign both `author` & `text`
+        // variables in a single statement
         let {author, text} = this.state;
 
         return (

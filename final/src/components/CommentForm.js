@@ -19,6 +19,8 @@ export default class CommentForm extends Component {
     state = INITIAL_STATE
 
     _updateFormFieldState(name, e) {
+        // Computed proprety keys makes it possible to create the object literal
+        // with a variable key all in one line!
         this.setState({[name]: e.target.value});
     }
 
@@ -31,6 +33,8 @@ export default class CommentForm extends Component {
     }
 
     _handleSubmit(e) {
+        // Object destructuring allows us to assign both `author` & `text`
+        // variables in a single statement
         let {author, text} = this.state;
 
         e.preventDefault();
@@ -47,6 +51,8 @@ export default class CommentForm extends Component {
     }
 
     render() {
+        // Object destructuring allows us to assign both `author` & `text`
+        // variables in a single statement
         let {author, text} = this.state;
 
         return (
