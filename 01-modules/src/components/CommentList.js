@@ -1,5 +1,5 @@
 // Module imports to load in dependencies
-// Uses both default & named imports
+// Uses default imports
 import React from 'react';
 import Comment from './Comment';
 

@@ -7,7 +7,8 @@ None
 ## Tasks
 
 - Replace uses of `React.createClass` with JavaScript `class` syntax (don't forget to add `.bind(this)` to event handlers!)
-- Use named import syntax to pull out `Component` & `PropTypes` from `react` dependency
+- Use named import syntax to pull out `Component` & `PropTypes` from `react` dependency in the component files
+- Use named import syntax to pull out `render` from `react-dom` dependency in [index.js](src/index.js)
 
 ## Next
 

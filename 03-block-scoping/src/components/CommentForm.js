@@ -30,10 +30,13 @@ export default class CommentForm extends Component {
         this._updateFormFieldState('text', e);
     }
     _handleSubmit(e) {
+        // We can call preventDefault before declaring the variables
+        // w/o worry of variable hoisting because `let` variables
+        // aren't hoisted
+        e.preventDefault();
+
         let author = this.state.author;
         let text = this.state.text;
-
-        e.preventDefault();
 
         if (!text || !author) {
             return;

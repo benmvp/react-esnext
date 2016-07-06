@@ -33,11 +33,14 @@ export default class CommentForm extends Component {
     }
 
     _handleSubmit(e) {
+        // We can call preventDefault before declaring the variables
+        // w/o worry of variable hoisting because `let` variables
+        // aren't hoisted
+        e.preventDefault();
+
         // Object destructuring allows us to assign both `author` & `text`
         // variables in a single statement
         let {author, text} = this.state;
-
-        e.preventDefault();
 
         if (!text || !author) {
             return;
@@ -46,7 +49,7 @@ export default class CommentForm extends Component {
         // With object literal shorthand, we don't have to duplicate the keys &
         // values because they have the same name!
         this.props.onCommentSubmit({author, text});
-        
+
         this.setState(INITIAL_STATE);
     }
 

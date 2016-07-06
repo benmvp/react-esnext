@@ -30,11 +30,14 @@ export default class CommentForm extends Component {
         this._updateFormFieldState('text', e);
     }
     _handleSubmit(e) {
+        // We can call preventDefault before declaring the variables
+        // w/o worry of variable hoisting because `let` variables
+        // aren't hoisted
+        e.preventDefault();
+
         // Object destructuring allows us to assign both `author` & `text`
         // variables in a single statement
         let {author, text} = this.state;
-
-        e.preventDefault();
 
         if (!text || !author) {
             return;

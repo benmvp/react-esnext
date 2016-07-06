@@ -1,5 +1,5 @@
 // Module imports to load in dependencies
-// Uses both default & named imports
+// Uses default imports
 import React from 'react';
 import CommentList from '../components/CommentList';
 import CommentForm from '../components/CommentForm';
