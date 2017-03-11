@@ -2,7 +2,33 @@
 
 ## Setup
 
-None
+We will be using [ES Class Fields & Static Properties](https://github.com/tc39/proposal-class-public-fields) (Stage 2) along with ES6 classes so we'll have to add an additional babel plugin.
+
+Install the [`babel-plugin-transform-class-properties`](https://babeljs.io/docs/plugins/transform-class-properties/) npm package:
+
+```sh
+npm install --save-dev babel-plugin-transform-class-properties
+```
+
+Update [.babelrc](.babelrc) to include the plugin:
+
+```json
+{
+    "presets": [
+        "react",
+        [
+            "env", {
+                "targets": {
+                    "browsers": ["last 2 versions"]
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        "transform-class-properties"
+    ]
+}
+```
 
 ## Tasks
 
@@ -17,6 +43,6 @@ Go to [Step 3 - Block scoping](../03-block-scoping/).
 ## Resources
 
 - [Learning ES6 - Classes](http://www.benmvp.com/learning-es6-classes)
-- [ES Class Fields & Static Properties](https://github.com/jeffmo/es-class-fields-and-static-properties) (Stage 1)
+- [ES Class Fields & Static Properties](https://github.com/tc39/proposal-class-public-fields) (Stage 2)
 - [ECMAScript 6 modules](http://www.2ality.com/2014/09/es6-modules-final.html)
 - [Status, process & documents for ECMAScript](https://github.com/tc39/ecma262)

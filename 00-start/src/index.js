@@ -152,7 +152,7 @@ var App = React.createClass({
 
         newComment.id = Date.now();
 
-        newComments = comments.concat([comment]);
+        newComments = comments.concat([newComment]);
         this.setState({comments: newComments});
 
         $.ajax({

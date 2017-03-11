@@ -17,14 +17,23 @@ npm install --save-dev webpack webpack-dev-server react-hot-loader
 Install [Babel](http://babeljs.io/) dependencies for ES6+ & JSX transpiling:
 
 ```sh
-npm install --save-dev babel-cli babel-preset-es2015 babel-preset-stage-0 babel-preset-react babel-loader
+npm install --save-dev babel-cli babel-preset-env babel-preset-react babel-loader
 ```
 
-Add [src/.babelrc](src/.babelrc) contents to add Babel configuration:
+Add [.babelrc](.babelrc) contents to add Babel configuration:
 
 ```json
 {
-    "presets": ["es2015", "react", "stage-0"]
+    "presets": [
+        "react",
+        [
+            "env", {
+                "targets": {
+                    "browsers": ["last 2 versions"]
+                }
+            }
+        ]
+    ]
 }
 ```
 
@@ -110,6 +119,6 @@ Go to [Step 2 - Classes](../02-classes/).
 
 - [ECMAScript 6 modules](http://www.2ality.com/2014/09/es6-modules-final.html)
 - [Reusable Components](https://facebook.github.io/react/docs/reusable-components.html)
-- [Babel](http://babeljs.io/)
+- [Babel](http://babeljs.io/) & [`babel-preset-env`](https://github.com/babel/babel-preset-env)
 - [Getting Started with webpack](http://webpack.github.io/docs/tutorials/getting-started/)
 - [React Developer Tools](https://github.com/facebook/react-devtools)

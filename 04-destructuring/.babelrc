@@ -7,11 +7,9 @@
                     "browsers": ["last 2 versions"]
                 }
             }
-        ],
-        "stage-3"
+        ]
     ],
     "plugins": [
-        "transform-class-properties",
-        "transform-runtime"
+        "transform-class-properties"
     ]
 }

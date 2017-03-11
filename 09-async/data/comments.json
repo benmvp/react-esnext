@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1388534400000,
+        "author": "Ben Ilegbodu",
+        "text": "React + ES.next = ♥!"
+    },
+    {
+        "id": 1420070400000,
+        "author": "Paul O’Shannessy",
+        "text": "React is *great*! It's my favorite!"
+    },
+    {
+        "id": 1489270598991,
+        "author": "Ben",
+        "text": "Async functions"
+    },
+    {
+        "id": 1489272420958,
+        "author": "Test",
+        "text": "test"
+    },
+    {
+        "id": 1489273181397,
+        "author": "sweet",
+        "text": "ok..."
+    },
+    {
+        "id": 1489273599185,
+        "author": "Promises",
+        "text": "yessir!"
+    }
+]

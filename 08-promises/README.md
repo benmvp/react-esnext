@@ -62,7 +62,7 @@ npm run start
 
 ## Next
 
-You're done! Your code should mirror the [Completed App](../final/).
+Go to [Step 9 - Async Functions](../09-async/).
 
 ## Resources
 

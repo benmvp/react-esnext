@@ -57,3 +57,4 @@ Each step in the workshop builds on top of the previous one. You can begin at th
 0. [Enhanced object literals](06-enhanced-object-literals/)
 0. [Spread operator](07-spread-operator/)
 0. [Promises](08-promises/)
+0. [Async functions](09-async/)
