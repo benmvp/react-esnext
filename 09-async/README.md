@@ -34,7 +34,7 @@ Update [.babelrc](.babelrc) to include the preset:
 
 ## Tasks
 
-TBD
+Convert the use of promises with async functions.
 
 ## Next
 
@@ -42,4 +42,5 @@ You're done! Your code should mirror the [Completed App](../final/).
 
 ## Resources
 
-TBD
+- [_Exploring ES2016 and ES2017: Async functions_](http://exploringjs.com/es2016-es2017/ch_async-functions.html)
+- [`babel-plugin-transform-runtime`](https://babeljs.io/docs/plugins/transform-runtime/) package
