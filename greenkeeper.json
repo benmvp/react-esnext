@@ -1,0 +1,19 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "00-start/package.json",
+        "01-modules/package.json",
+        "02-classes/package.json",
+        "03-block-scoping/package.json",
+        "04-destructuring/package.json",
+        "05-arrow-functions/package.json",
+        "06-enhanced-object-literals/package.json",
+        "07-spread-operator/package.json",
+        "08-promises/package.json",
+        "09-async/package.json",
+        "final/package.json"
+      ]
+    }
+  }
+}
