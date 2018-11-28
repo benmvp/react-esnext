@@ -9,11 +9,11 @@
     "express": "^4.14.0"
   },
   "devDependencies": {
-    "babel-eslint": "^6.1.0",
-    "eslint": "^2.13.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
     "eslint-config-benmvp": "^4.1.0",
-    "eslint-plugin-jsx-a11y": "^1.5.3",
-    "eslint-plugin-react": "^5.2.2",
-    "serve": "^1.4.0"
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "serve": "^10.1.1"
   }
 }
