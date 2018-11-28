@@ -1,5 +1,7 @@
 # React + ES.next = ♥
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/benmvp/react-esnext.svg)](https://greenkeeper.io/)
+
 A step-by-step example of how to leverage ES6+/ES2015+ in React by rewriting (an adapted version of) the [official React tutorial](https://facebook.github.io/react/docs/tutorial.html).
 
 ## To run completed app
